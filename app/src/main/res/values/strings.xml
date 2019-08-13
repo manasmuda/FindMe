@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FINDme</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="facebook_app_id">442750536458486</string>
+    <string name="fb_login_protocol_scheme">fb442750536458486</string>
+
+</resources>

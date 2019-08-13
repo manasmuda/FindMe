@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="0dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/splashlayout">
+
+        <ImageView
+            android:id="@+id/logoimage1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/findme_app_logo"
+            android:layout_centerInParent="true"
+            android:translationY="-50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welocome to FINDme"
+            android:layout_alignBottom="@id/logoimage1"
+            android:layout_centerHorizontal="true"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            />
+        <Button
+            android:id="@+id/enterbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="0dp"
+            android:layout_alignParentBottom="true"
+            android:background="#ffffff"
+            android:padding="0dp"
+            android:text="ENTER"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save,share and track locations easily"
+            android:layout_above="@+id/enterbutton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:textSize="18dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/loginlayout">
+
+        <ImageView
+            android:id="@+id/logoimage2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/findme_app_logo"
+            android:layout_centerInParent="true"
+            android:translationY="-70dp"/>
+
+        <TextView
+            android:id="@+id/titletext21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FINDme"
+            android:layout_alignBottom="@id/logoimage2"
+            android:layout_centerHorizontal="true"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:translationY="-20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/titletext21"
+            android:translationY="70dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/googlesigninbutton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/google_pngrepo_com"
+                android:background="@color/colorPrimary"
+                android:translationX="-25dp"/>
+
+            <ImageButton
+                android:id="@+id/fbesigninbutton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/facebook_sign_in"
+                android:background="@color/colorPrimary"
+                android:translationX="25dp"/>
+        </LinearLayout>
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/fblb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"/>
+
+
+    </RelativeLayout>
+</LinearLayout>
